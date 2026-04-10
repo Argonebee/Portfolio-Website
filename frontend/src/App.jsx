@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { projects } from './data/projects'
 import { skillGroups } from './data/skills'
 import { achievements } from './data/achievements'
@@ -172,6 +173,7 @@ function App() {
 
   return (
     <div className="app-page">
+      <Analytics />
       <iframe
         src="/background/index.html"
         title="Animated background"
