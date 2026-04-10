@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { projects } from './data/projects'
 import { skillGroups } from './data/skills'
 import { achievements } from './data/achievements'
@@ -409,6 +410,7 @@ function App() {
         </div>
       </footer>
       </div>
+      <SpeedInsights />
     </div>
   )
 }
